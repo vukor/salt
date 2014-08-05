@@ -1,6 +1,4 @@
 base:
   '*':
-  #- users
-  #- webserver
-  - repos
+  - nginx
 

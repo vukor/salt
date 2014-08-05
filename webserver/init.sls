@@ -1,7 +1,23 @@
+## Nginx
+nginx-pkg:
+  pkg.installed:
+    - name: nginx
+    - refresh: True
+    - require:
+      - cmd: nginx-repo
+    #  group.present:
+    #    - name: www
+
+nginx-service:
+  service.running:
+    - name: nginx
+    - full_restart: True
+    - require:
+      - pkg: nginx-pkg
+
 webpkgs:
   pkg.installed:
     - pkgs:
-      - nginx
       - php
       - php-cli
       - php-mysql
@@ -33,9 +49,4 @@ webpkgs:
     - source: salt://webserver/files/etc/php.ini
 
 
-nginx:
-  service:
-    - running
-  group.present:
-    - name: www
 
