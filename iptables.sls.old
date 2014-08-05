@@ -1,0 +1,19 @@
+services:
+  iptables.append:
+    - table: filter
+    - chain: INPUT
+    - jump: ACCEPT
+    - interface: lo
+    - save: True
+
+services1:
+  iptables.append:
+    - table: filter
+    - chain: INPUT
+    - jump: ACCEPT
+    - match: state
+    - connstate: NEW
+    - dports: 22,25,80,443
+    - proto: tcp
+    - save: True
+
