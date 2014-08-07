@@ -9,4 +9,6 @@ dev:
     - shell: /bin/bash
     - home: /home/dev
     - gid: www
+    - groups:
+      - mysql
       
