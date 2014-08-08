@@ -1,8 +1,8 @@
 base:
-  '*':
+  'rsh':
   - vim
-  - mysql
-  - users
-  - nginx
-  - php
+#  - mysql
+#  - users
+#  - nginx
+#  - php
 

@@ -1,7 +1,6 @@
 vim-enhanced:
   pkg:
     - latest
-    - installed
 
 /root/.vimrc:
   file.managed:
