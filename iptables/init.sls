@@ -3,6 +3,7 @@ iptables:
     - installed
   service:
     - running
+    - enable: True
     - watch:
       - pkg: iptables
       - file: iptables

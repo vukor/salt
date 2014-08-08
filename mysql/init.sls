@@ -9,6 +9,7 @@ mysql-pkgs:
 mysql-service:
   service.running:
     - name: mysqld
+    - enable: True
     - full_restart: True
     - require:
       - pkg: mysql-pkgs

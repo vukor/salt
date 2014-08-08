@@ -16,6 +16,7 @@ php-pkgs:
 php-fpm-service:
   service.running:
     - name: php-fpm
+    - enable: True
     - full_restart: True
     - require:
       - pkg: php-pkgs

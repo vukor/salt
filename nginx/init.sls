@@ -18,6 +18,7 @@ nginx-pkg:
 nginx-service:
   service.running:
     - name: nginx
+    - enable: True
     - full_restart: True
     - require:
       - pkg: nginx-pkg
