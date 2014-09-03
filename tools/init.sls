@@ -7,6 +7,4 @@ tools-pkgs:
 /root/.vimrc:
   file.managed:
     - source: salt://tools/files/vim/.vimrc
-    - require:
-       - pkg: vim-enhanced
 
