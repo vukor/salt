@@ -11,4 +11,12 @@ dev:
     - gid: www
     - groups:
       - mysql
-      
+
+dev-log:
+  cmd.run:    
+    - name: 'mkdir -m 770 /home/dev/logs && chown dev:www /home/dev/logs'
+
+dev-www-dir:
+  cmd.run:    
+    - name: 'mkdir -m 770 /home/dev/www && chown dev:www /home/dev/www'
+     

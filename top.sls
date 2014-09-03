@@ -1,10 +1,10 @@
 base:
   '*':
   - tools
-  #- mysql
-  #- users
-  #- nginx
-  #- php
-  #- postfix  
-  #- iptables
+  - mysql
+  - users
+  - nginx
+  - php
+  - postfix  
+  - iptables
 
