@@ -1,6 +1,6 @@
 base:
   '*':
-  - vim
+  - tools
   - mysql
   - users
   - nginx
