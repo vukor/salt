@@ -12,6 +12,10 @@ dev:
     - groups:
       - mysql
 
+/home/dev/:
+  file.directory:
+    - mode: 710
+
 dev-log:
   cmd.run:    
     - name: 'mkdir -m 770 /home/dev/logs && chown dev:www /home/dev/logs'
