@@ -4,6 +4,11 @@ postfix-pkgs:
     - pkgs:
       - postfix
 
+## turn off local delivery
+postfix-configuration:
+  cmd.run:    
+    - name: 'postconf -e mydestination='
+
 ## run and check service
 postfix-service:
   service.running:
