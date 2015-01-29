@@ -4,6 +4,8 @@ tools-pkgs:
       - vim-enhanced
       - ntsysv
       - screen
+      - mc
+      - wget
 
 /root/.vimrc:
   file.managed:
