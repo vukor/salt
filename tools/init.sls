@@ -3,6 +3,7 @@ tools-pkgs:
     - pkgs:
       - vim-enhanced
       - ntsysv
+      - screen
 
 /root/.vimrc:
   file.managed:
