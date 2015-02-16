@@ -6,6 +6,7 @@ tools-pkgs:
       - screen
       - mc
       - wget
+      - mailx
 
 /root/.vimrc:
   file.managed:
