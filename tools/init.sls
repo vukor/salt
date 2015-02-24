@@ -3,6 +3,10 @@ tools-pkgs:
     - pkgs:
       - vim-enhanced
       - ntsysv
+      - screen
+      - mc
+      - wget
+      - mailx
 
 /root/.vimrc:
   file.managed:
