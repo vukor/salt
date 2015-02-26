@@ -6,13 +6,13 @@ base:
   - repo.atomic
 
   ## main
-  #- tools
-  #- mysql
-  #- users
-  #- nginx
-  #- php
-  #- postfix  
-  #- iptables
+  - tools
+  - mysql
+  - users
+  - nginx
+  - php
+  - postfix  
+  - iptables
   
   ## rackspace pkgs
   #- cloud.rackspace
