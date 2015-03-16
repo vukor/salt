@@ -1,8 +1,4 @@
 repo-atomic-install:
-  file.managed:
-    - source: salt://repo/atomic/files/atomic.sh
-    - name: /tmp/atomic.sh
-    - mode: 700
   cmd.run:
-    - name: '/tmp/atomic.sh'
+    - name: 'wget -q -O - http://www.atomicorp.com/installers/atomic | sed 's/!\ $NON_INT/$NON_INT/''
 
