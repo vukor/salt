@@ -9,8 +9,8 @@ yum install salt-minion git
 cd /srv
 git clone https://github.com/vukor/salt.git
 
-## Deploy nginx, mysql, php-fpm, модули php, postfix, iptables
-salt-call state.highstate --local
+### Deploy nginx, mysql, php-fpm, модули php, postfix, iptables
+``salt-call state.highstate --local``
 
 ### Now you have to:
 
