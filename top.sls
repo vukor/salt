@@ -3,16 +3,16 @@ base:
 
   ## repo
   - repo.epel
-  - repo.atomic
+  #- repo.atomic
 
   ## main
   - tools
-  - mysql
+  #- mysql
   - users
   - nginx
   - php
-  - postfix  
-  - iptables
+  #- postfix  
+  #- iptables
   
   ## rackspace pkgs
   #- cloud.rackspace
