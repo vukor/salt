@@ -40,3 +40,12 @@ nginx-vhosts:
     - name: /etc/nginx/hosts
     - source: salt://nginx/files/hosts
 
+## logrotate config
+logrotate-conf:
+  file.managed:
+    - name: /etc/logrotate.d/www
+    - source: salt://nginx/files/logrotate-www.conf
+    - user: root
+    - group: root
+    - mode: 644
+
