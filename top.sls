@@ -3,7 +3,7 @@ base:
 
   ## repo
   - repo.epel
-  #- repo.atomic
+  - repo.atomic
 
   ## main
   - tools
