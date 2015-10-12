@@ -7,12 +7,12 @@ base:
 
   ## main
   - tools
-  #- mysql
+  - mysql
   - users
   - nginx
   - php
-  #- postfix  
-  #- iptables
+  - postfix  
+  - iptables
   
   ## rackspace pkgs
   #- cloud.rackspace
