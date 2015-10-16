@@ -40,6 +40,12 @@ nginx-vhosts:
     - name: /etc/nginx/hosts
     - source: salt://nginx/files/hosts
 
+## nginx own configs
+nginx-includes:
+  file.recurse:
+    - name: /etc/nginx/includes
+    - source: salt://nginx/files/includes
+
 ## logrotate config
 logrotate-conf:
   file.managed:
