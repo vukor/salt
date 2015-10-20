@@ -7,6 +7,7 @@ base:
 
   ## main
   - tools
+  - ssh
   - mysql
   - users
   - nginx
