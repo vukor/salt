@@ -47,10 +47,18 @@ nginx-includes:
     - source: salt://nginx/files/includes
 
 ## logrotate config
-logrotate-conf:
+logrotate-conf-www:
   file.managed:
-    - name: /etc/logrotate.d/www
+    - name: /etc/logrotate.d/www.conf
     - source: salt://nginx/files/logrotate-www.conf
+    - user: root
+    - group: root
+    - mode: 644
+
+logrotate-conf-dev:
+  file.managed:
+    - name: /etc/logrotate.d/dev.conf
+    - source: salt://nginx/files/logrotate-dev.conf
     - user: root
     - group: root
     - mode: 644
